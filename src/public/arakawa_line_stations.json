@@ -1,0 +1,395 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "早稲田"
+        },
+        "geometry": {
+          "coordinates": [
+            139.71860657473115,
+            35.71196542082416
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "面影橋"
+        },
+        "geometry": {
+          "coordinates": [
+            139.71422537118593,
+            35.7130060572798
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "学習院下"
+        },
+        "geometry": {
+          "coordinates": [
+            139.71252400144198,
+            35.71635291338805
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "鬼子母神前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.71474343638954,
+            35.72008005685336
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "都電雑司ヶ谷"
+        },
+        "geometry": {
+          "coordinates": [
+            139.7178840872284,
+            35.72415632193709
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "東池袋四丁目"
+        },
+        "geometry": {
+          "coordinates": [
+            139.72011590330078,
+            35.72527216728203
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "向原"
+        },
+        "geometry": {
+          "coordinates": [
+            139.72507824786624,
+            35.72903577722805
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "大塚駅前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.7293323680879,
+            35.731585814490415
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "巣鴨新田駅"
+        },
+        "geometry": {
+          "coordinates": [
+            139.72773540492,
+            35.73554379477004
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "庚申塚"
+        },
+        "geometry": {
+          "coordinates": [
+            139.72972666721552,
+            35.73962924402231
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "新庚申塚"
+        },
+        "geometry": {
+          "coordinates": [
+            139.73046096760766,
+            35.74130390924921
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "西ヶ原四丁目"
+        },
+        "geometry": {
+          "coordinates": [
+            139.73293382130845,
+            35.74457848566935
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "滝野川一丁目"
+        },
+        "geometry": {
+          "coordinates": [
+            139.73540927836746,
+            35.74734403289273
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "飛鳥山"
+        },
+        "geometry": {
+          "coordinates": [
+            139.73740859169527,
+            35.75021288781598
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "王子駅前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.73813710018732,
+            35.75283014508045
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "栄町"
+        },
+        "geometry": {
+          "coordinates": [
+            139.7421792570908,
+            35.75091047770026
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "梶尾"
+        },
+        "geometry": {
+          "coordinates": [
+            139.7478554529896,
+            35.751100093960034
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "荒川車庫前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.7522531685671,
+            35.750931854484065
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "荒川遊園地前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.75789753940057,
+            35.75069418490881
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "小台"
+        },
+        "geometry": {
+          "coordinates": [
+            139.76204547123035,
+            35.75053190162561
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "宮ノ前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.76530087302416,
+            35.750041851147174
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "熊野前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.76975111338157,
+            35.74910502115584
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "東尾久三丁目"
+        },
+        "geometry": {
+          "coordinates": [
+            139.77405643682147,
+            35.74555719764189
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "町屋二丁目"
+        },
+        "geometry": {
+          "coordinates": [
+            139.77679569482888,
+            35.74374648554823
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "町屋駅前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.7809376144333,
+            35.74277766607665
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "荒川七丁目"
+        },
+        "geometry": {
+          "coordinates": [
+            139.7841552048618,
+            35.74199659044801
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "荒川二丁目"
+        },
+        "geometry": {
+          "coordinates": [
+            139.78466097826146,
+            35.73869029975744
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "荒川区役所前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.78646151701577,
+            35.734919541375135
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "荒川一中前"
+        },
+        "geometry": {
+          "coordinates": [
+            139.7889443205367,
+            35.733716790062246
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "三ノ輪橋"
+        },
+        "geometry": {
+          "coordinates": [
+            139.79154992935855,
+            35.73218783062168
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  }
