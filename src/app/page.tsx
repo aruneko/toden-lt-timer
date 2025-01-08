@@ -1,6 +1,6 @@
 'use client'
 
-import { Layer, Map, Source } from "@vis.gl/react-maplibre";
+import { Layer, Map, Source, ViewState } from "@vis.gl/react-maplibre";
 import 'maplibre-gl/dist/maplibre-gl.css';
 import arakawa_line from '../public/arakawa_line.json';
 import arakawa_line_stations from '../public/arakawa_line_stations.json';
@@ -8,7 +8,7 @@ import { useMemo, useState } from "react";
 import { point } from "@turf/helpers";
 import distance from "@turf/distance";
 import lineSlice from "@turf/line-slice";
-import { Feature, LineString } from "geojson";
+import { Feature, FeatureCollection, LineString, Point } from "geojson";
 import length from "@turf/length";
 import { useLocation, usePosition } from "./hooks";
 
@@ -20,6 +20,14 @@ export default function Page() {
         return names;
     }, []);
 
+    const [mapViewState, setMapViewState] = useState<ViewState>({
+        longitude: 139.7918319,
+        latitude: 35.7318969,
+        zoom: 14,
+        pitch: 0,
+        bearing: 0,
+        padding: { top: 0, bottom: 0, left: 0, right: 0 },
+    });
     const [selectedStationName, setSelectedStationName] = useState(stationNames[0]);
     const [previousPosition, setPreviousPosition] = usePosition();
     const [currentPosition, setCurrentPosition] = usePosition();
@@ -69,15 +77,39 @@ export default function Page() {
         }
     }, [lineDistance, currentSpeed]);
 
+    const currentPointGeoJson: FeatureCollection<Point> = {
+        type: 'FeatureCollection',
+        features: [
+            {
+                type: 'Feature',
+                "properties": {},
+                geometry: {
+                    type: 'Point',
+                    coordinates: [currentPosition.longitude, currentPosition.latitude]
+                }
+            }
+        ]
+    }
+
+    const selectedStationPointGeoJson: FeatureCollection<Point> = {
+        type: 'FeatureCollection',
+        features: [
+            {
+                type: 'Feature',
+                "properties": {},
+                geometry: {
+                    type: 'Point',
+                    coordinates: selectedStationPosition
+                }
+            }
+        ]
+    }
+
     return (
         <div>
             <div>
                 <Map
-                    initialViewState={{
-                        longitude: 139.7918319,
-                        latitude: 35.7318969,
-                        zoom: 14,
-                    }}
+                    initialViewState={mapViewState}
                     style={{ width: '100%', height: 400 }}
                     mapStyle="https://tile.openstreetmap.jp/styles/maptiler-basic-ja/style.json"
                 >
@@ -85,7 +117,13 @@ export default function Page() {
                         <Layer type='line' />
                     </Source>
                     <Source type="geojson" data={arakawa_line_stations}>
-                        <Layer type='circle' paint={{ 'circle-radius': 10 }} />
+                        <Layer type='circle' paint={{ 'circle-radius': 8 }} />
+                    </Source>
+                    <Source type="geojson" data={selectedStationPointGeoJson}>
+                        <Layer type='circle' paint={{ 'circle-radius': 7, 'circle-color': '#ff0000' }} />
+                    </Source>
+                    <Source type="geojson" data={currentPointGeoJson}>
+                        <Layer type='circle' paint={{ 'circle-radius': 7, 'circle-color': '#376fb3' }} />
                     </Source>
                 </Map>
             </div>
